@@ -9,13 +9,14 @@
 
         <variable
             name="viewModel"
-            type="com.mrlight515.apitest.ui.UserViewModel" />
+            type="com.mrlight515.apitest1.ui.UserViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragmentUserList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.mrlight515.apitest.ui.UserFragment">
+        tools:context="com.mrlight515.apitest1.ui.UserFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/users_list"

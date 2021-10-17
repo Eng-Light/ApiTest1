@@ -2,7 +2,7 @@
 <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/userFragment"
-    android:name="com.mrlight515.apitest.ui.UserFragment"
+    android:name="com.mrlight515.apitest1.ui.UserFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout="@layout/fragment_user" />

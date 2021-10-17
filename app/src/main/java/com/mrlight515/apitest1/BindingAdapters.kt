@@ -7,9 +7,9 @@ import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.mrlight515.apitest.ui.UserApiStatus
 import com.mrlight515.apitest1.network.UserCard
 import com.mrlight515.apitest1.ui.UserAdapter
+import com.mrlight515.apitest1.ui.UserApiStatus
 
 @BindingAdapter("imageUrl")
 fun bindImage(imageView: ImageView, imgUrl: String?) {

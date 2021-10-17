@@ -1,4 +1,4 @@
-package com.mrlight515.apitest.ui
+package com.mrlight515.apitest1.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.mrlight515.apitest.databinding.FragmentUserBinding
+import com.mrlight515.apitest1.databinding.FragmentUserBinding
 
 class UserFragment : Fragment() {
 
