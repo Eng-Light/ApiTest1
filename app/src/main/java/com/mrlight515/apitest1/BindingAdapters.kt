@@ -2,6 +2,7 @@ package com.mrlight515.apitest1
 
 import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -11,20 +12,25 @@ import com.mrlight515.apitest1.network.UserCard
 import com.mrlight515.apitest1.ui.UserAdapter
 
 @BindingAdapter("imageUrl")
-fun bindImage(imageView: ImageView,imgUrl:String?){
+fun bindImage(imageView: ImageView, imgUrl: String?) {
     imgUrl?.let {
         val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
-        imageView.load(imgUri){
+        imageView.load(imgUri) {
             placeholder(R.drawable.loading_animation)
             error(R.drawable.ic_broken_image)
         }
     }
 }
 
-/*@BindingAdapter("userName")
-fun bindUserName(textView: TextView,textName:String?){
-    textView.text = users
-}*/
+@BindingAdapter("userName")
+fun bindUserName(textView: TextView, textName: String?) {
+    textView.text = textName
+}
+
+@BindingAdapter("userBirthDate")
+fun bindUserDateOfBirth(textView: TextView, textDoB: String?) {
+    textView.text = textDoB
+}
 
 @BindingAdapter("listData")
 fun bindRecyclerView(
